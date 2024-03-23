@@ -17,6 +17,21 @@ If the Model changes, it notifies the View.
 The View retrieves updated data from the Model and refreshes the user interface accordingly.
 The cycle continues as users interact with the application.
 MVC is widely used in web development frameworks like Ruby on Rails, Django, and Laravel, as well as in desktop and mobile application development. It promotes code reusability, scalability, and maintainability, making it a popular choice for building complex software systems.
+                              or 
+Model (M): Think of this as your data manager. It handles all the data-related tasks like saving information to the database, retrieving data when needed, and performing any logic related to the data. For example, if you have a user in your application, the model would handle tasks like saving their name, email, and password to the database.
+
+View (V): This is what the user sees. It's like the front end of your application. Views are responsible for displaying the data that the user interacts with. For example, if you have a webpage where users can see their profile information, the view would determine how that information is displayed on the screen.
+
+Controller (C): Think of this as the traffic director. It receives requests from the user, decides what needs to be done based on that request, and then interacts with the model to get the necessary data. Once it has the data, it passes it to the view, which then displays it to the user. For example, if a user wants to view their profile, the controller would handle the request, retrieve the user's information from the model, and then pass it to the view to display.
+
+So, in simple terms, MVC in Ruby on Rails helps organize your code into three main parts: one for managing data (Model), one for displaying data to users (View), and one for coordinating the interaction between the two (Controller). This separation makes it easier to understand and maintain your code as your application grows.
+
+
+
+
+
+
+
 **************************************************************************************************************************************************************************************
 To install Ruby on a Windows system, you can follow these steps:
 
@@ -45,4 +60,4 @@ Copy code
 gem update --system
 This will update RubyGems to the latest version.
 
-After completing these steps, Ruby should be installed and ready to use on your Windows system. You can start writing and running Ruby programs using a text editor and the command prompt. Additionally, you can use RubyGems to install additional Ruby libraries and frameworks as needed for your projects.
+After completing these steps, Ruby should be installed and ready to use on your Windows system. You can start writing and running Ruby programs using a text editor and the command prompt. Additionally, you can use RubyGems to install additional Ruby libraries and frameworks as needed for your pro
