@@ -18,6 +18,92 @@ The View retrieves updated data from the Model and refreshes the user interface 
 The cycle continues as users interact with the application.
 MVC is widely used in web development frameworks like Ruby on Rails, Django, and Laravel, as well as in desktop and mobile application development. It promotes code reusability, scalability, and maintainability, making it a popular choice for building complex software systems.
 **************************************************************************************************************************************************************************************
+Directory structure
+
+.
+|-- app
+|   |-- assets
+|   |   |-- images
+|   |   |-- javascripts
+|   |   |   `-- application.js
+|   |   `-- stylesheets
+|   |       `-- application.css
+|   |-- controllers
+|   |   |-- application_controller.rb
+|   |   `-- concerns
+|   |-- helpers
+|   |   `-- application_helper.rb
+|   |-- mailers
+|   |-- models
+|   |   `-- concerns
+|   `-- views
+|       `-- layouts
+|           `-- application.html.erb
+|-- bin
+|   |-- bundle
+|   |-- rails
+|   |-- rake
+|   |-- setup
+|   `-- spring
+|-- config
+|   |-- application.rb
+|   |-- boot.rb
+|   |-- database.yml
+|   |-- environment.rb
+|   |-- environments
+|   |   |-- development.rb
+|   |   |-- production.rb
+|   |   `-- test.rb
+|   |-- initializers
+|   |   |-- assets.rb
+|   |   |-- backtrace_silencers.rb
+|   |   |-- cookies_serializer.rb
+|   |   |-- filter_parameter_logging.rb
+|   |   |-- inflections.rb
+|   |   |-- mime_types.rb
+|   |   |-- session_store.rb
+|   |   `-- wrap_parameters.rb
+|   |-- locales
+|   |   `-- en.yml
+|   |-- routes.rb
+|   `-- secrets.yml
+|-- config.ru
+|-- db
+|   `-- seeds.rb
+|-- Gemfile
+|-- Gemfile.lock
+|-- lib
+|   |-- assets
+|   `-- tasks
+|-- log
+|-- public
+|   |-- 404.html
+|   |-- 422.html
+|   |-- 500.html
+|   |-- favicon.ico
+|   `-- robots.txt
+|-- Rakefile
+|-- README.rdoc
+|-- test
+|   |-- controllers
+|   |-- fixtures
+|   |-- helpers
+|   |-- integration
+|   |-- mailers
+|   |-- models
+|   `-- test_helper.rb
+|-- tmp
+|   `-- cache
+|       `-- assets
+`-- vendor
+`-- assets
+    |-- javascripts
+    `-- stylesheets
+
+
+
+
+
 To install Ruby on a Windows system, you can follow these steps:
 
 Download RubyInstaller: Go to the RubyInstaller website and download the latest version of RubyInstaller. You'll typically want to download the "Ruby+Devkit" version, which includes the development kit needed for compiling native extensions.
