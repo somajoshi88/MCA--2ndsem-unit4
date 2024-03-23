@@ -17,3 +17,32 @@ If the Model changes, it notifies the View.
 The View retrieves updated data from the Model and refreshes the user interface accordingly.
 The cycle continues as users interact with the application.
 MVC is widely used in web development frameworks like Ruby on Rails, Django, and Laravel, as well as in desktop and mobile application development. It promotes code reusability, scalability, and maintainability, making it a popular choice for building complex software systems.
+**************************************************************************************************************************************************************************************
+To install Ruby on a Windows system, you can follow these steps:
+
+Download RubyInstaller: Go to the RubyInstaller website and download the latest version of RubyInstaller. You'll typically want to download the "Ruby+Devkit" version, which includes the development kit needed for compiling native extensions.
+
+Run the installer: Once the download is complete, run the RubyInstaller executable (.exe) file that you downloaded. This will start the installation process.
+
+Choose installation options: During the installation process, you'll be presented with various options. Here are some recommendations:
+
+Choose a directory path for the installation. The default path (C:\Ruby27-x64 for example) is usually fine.
+Make sure to check the box that says "Add Ruby executables to your PATH". This will allow you to run Ruby commands from the command prompt without specifying the full path to the Ruby executable.
+Optionally, you can associate .rb files with the Ruby interpreter so that you can run Ruby scripts by double-clicking them.
+Complete the installation: Follow the on-screen instructions to complete the installation process. Once the installation is finished, Ruby should be installed on your system.
+
+Verify the installation: After installation, open a command prompt and type the following command to verify that Ruby was installed correctly:
+
+bash
+Copy code
+ruby --version
+This command should print the version number of Ruby, indicating that Ruby has been successfully installed on your system.
+
+Install RubyGems (optional): RubyGems is a package manager for Ruby libraries (gems). While RubyInstaller typically includes RubyGems, it's a good idea to update it to the latest version. Run the following command in the command prompt:
+
+bash
+Copy code
+gem update --system
+This will update RubyGems to the latest version.
+
+After completing these steps, Ruby should be installed and ready to use on your Windows system. You can start writing and running Ruby programs using a text editor and the command prompt. Additionally, you can use RubyGems to install additional Ruby libraries and frameworks as needed for your projects.
