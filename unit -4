@@ -244,3 +244,60 @@ gem update --system
 This will update RubyGems to the latest version.
 
 After completing these steps, Ruby should be installed and ready to use on your Windows system. You can start writing and running Ruby programs using a text editor and the command prompt. Additionally, you can use RubyGems to install additional Ruby libraries and frameworks as needed for your pro
+**********************************************************************************************************************
+To create a simple page in Ruby on Rails, you'll need to follow these basic steps:
+
+Generate a New Rails Application:
+If you haven't already set up a Rails application, you can create one using the rails new command. Open your terminal or command prompt and run:
+
+
+rails new myapp
+Replace myapp with the name of your application.
+
+Generate a Controller:
+Navigate to your Rails application directory (myapp in this example) and generate a controller using the rails generate controller command. For example:
+
+rails generate controller Pages home
+This command generates a controller named PagesController with an action named home.
+
+Define the Action:
+Open the app/controllers/pages_controller.rb file and define the home action:
+
+class PagesController < ApplicationController
+  def home
+  end
+end
+Create a View:
+Create a view file for the home action. By convention, Rails will look for a view file named home.html.erb inside the app/views/pages directory. Create this file:
+
+app/views/pages/home.html.erb
+Inside home.html.erb, you can write the HTML content for your page:
+
+html
+Copy code
+<h1>Welcome to my Rails Application!</h1>
+<p>This is a simple page created with Ruby on Rails.</p>
+Define Routes:
+Open the config/routes.rb file and define a route for the home action of the PagesController:
+
+ruby
+Copy code
+Rails.application.routes.draw do
+  root 'pages#home'
+end
+This route sets the root URL of your application to the home action of the PagesController.
+
+Start the Rails Server:
+Start the Rails server by running:
+
+Copy code
+rails server
+You should see output indicating that the server is running.
+
+Access Your Page:
+Open a web browser and go to http://localhost:3000. You should see the content of your home action displayed on the page.
+
+That's it! You've created a simple page in Ruby on Rails. You can further expand your application by adding more controllers, views, and routes as needed.
+
+
+
